@@ -85,6 +85,12 @@ section{
     margin-bottom:10%;
     font-family:'Goudy Bookletter 1911';
     font-size: 1.2em;
+
+}
+
+i{
+    font-size: 2em;
+    background-color: #2A3439;
 }
 
 a{
@@ -197,6 +203,7 @@ a{
     .menu.activo{
         display: flex;
     }
+    
 }
 
 footer{
