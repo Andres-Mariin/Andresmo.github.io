@@ -18,7 +18,7 @@ body{
 }
 
 main{
-   grid-column: 3 / 9;
+    grid-column: 3 / 9;
     border: solid 1px #2A3439;
     padding: 3%;
     border-top-left-radius: 10px;
@@ -87,7 +87,6 @@ section{
     font-size: 1.2em;
 
 }
-
 
 .imagen_flotante{
     width: 45%;
@@ -207,6 +206,7 @@ a{
         color: white;
         cursor: pointer;
         margin-right: 3%;
+        -webkit-tap-highlight-color: transparent;
     }
     .menu.activo{
         display: flex;

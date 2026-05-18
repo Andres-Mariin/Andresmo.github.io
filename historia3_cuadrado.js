@@ -2,7 +2,7 @@
 let botonColor = document.querySelector(".boton1");
 let botonContador = document.querySelector(".boton2");
 let color = document.querySelector(".cuadroColoreado");
-let texto = document.querySelector("p");
+let texto = document.querySelector(".texto-interactivo");
 let contador = 0;
 botonColor.addEventListener("click", function () {
     color.classList.toggle("black");
