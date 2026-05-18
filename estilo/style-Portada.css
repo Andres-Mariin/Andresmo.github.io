@@ -88,6 +88,14 @@ section{
 
 }
 
+
+.imagen_flotante{
+    width: 45%;
+    height: auto;
+    border-radius: 5px;
+    overflow: auto;
+}
+
 i{
     font-size: 2em;
     background-color: #2A3439;
@@ -202,6 +210,10 @@ a{
     }
     .menu.activo{
         display: flex;
+    }
+    .imagen_flotante{
+        width: 80%;
+        height: auto;
     }
     
 }
