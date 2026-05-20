@@ -14,10 +14,10 @@ botonContador.addEventListener("click", function() {
     }else{
         if(color.classList.contains("black")) {
         texto.style.color = "white";
-        texto.textContent = contador + " Clicks!!";
+        texto.textContent = contador + " clicks!!";
     }else{
         texto.style.color = "black";
-        texto.textContent = contador + " Clicks!!";
+        texto.textContent = contador + " clicks!!";
     }
     if(contador === 1) {
         texto.textContent = contador + " click!!"
@@ -26,6 +26,18 @@ botonContador.addEventListener("click", function() {
 });
 document.addEventListener("click", function(event) {
     if(!botonContador.contains(event.target) && (botonColor.contains(event.target))) {
-        texto.textContent = "";
+        texto.textContent = "";  
+    }
+});
+color.addEventListener("click", function() {
+    if(contador >= 1) {
+        contador = 0;
+        texto.textContent = contador + " clicks!!";
+    }if(texto.classList.contains !== "" && color.classList.contains("black")) {
+        texto.style.color = "white";
+        texto.textContent = contador + " clicks!!";
+    }else{
+        texto.style.color = "black";
+        texto.textContent = contador + " clicks!!";
     }
 });
