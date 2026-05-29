@@ -184,7 +184,13 @@ a{
         gap: 10px;
         border-radius: 5px;
         border: solid 1px #DCC7A1;
+        
     }
+
+    .menuHistorias{
+        color: #DCC7A1;
+    }
+
     .overlay.activo{
         display: none;
         position: fixed;
