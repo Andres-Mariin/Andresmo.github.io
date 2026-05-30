@@ -187,6 +187,10 @@ a{
         
     }
 
+    .bloquearScroll{
+        overflow: hidden;
+    }
+
     .menuHistorias{
         color: #DCC7A1;
     }
