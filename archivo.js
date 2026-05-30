@@ -12,7 +12,7 @@ document.addEventListener("click", function(evento) {
     if(!menu.contains(evento.target) && !boton.contains(evento.target)) {
         menu.classList.remove("activo");
         overlay.classList.remove("activo");
-        body.classList.toggle("bloquearScroll");
+        body.classList.remove("bloquearScroll");
     }
 });
    
