@@ -132,6 +132,7 @@ a{
     }
     a{
         margin-left: 5px;
+        -webkit-tap-highlight-color: transparent;
     }
     .boton1, .boton2{
         height: 28px;

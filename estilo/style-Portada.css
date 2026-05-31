@@ -104,6 +104,10 @@ a{
     font-size: 1.2em;
     color: aliceblue;
     text-decoration: none;
+    
+}
+a:active {
+    color: #DCC7A1;
 }
 
 .panel_izquierdo{
@@ -184,7 +188,7 @@ a{
         gap: 10px;
         border-radius: 5px;
         border: solid 1px #DCC7A1;
-        
+        -webkit-tap-highlight-color: transparent;
     }
 
     .bloquearScroll{

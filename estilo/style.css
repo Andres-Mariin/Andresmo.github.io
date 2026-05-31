@@ -17,6 +17,14 @@ body{
 
 }
 
+.hamburguesa{
+    display: none;
+}
+
+.menu{
+    display: none;
+}
+
 h1, h2, h3{ 
     max-width: 100%;
     margin: auto;
@@ -155,6 +163,50 @@ p{
         background-color: white;
         padding: 0;
     }
+    header{
+        display: flex;
+        padding-top: 5%;
+    }
+    .hamburguesa{
+        display: block;
+        font-size: 25px;
+        border: none;
+        background: none;
+        color: black;
+        cursor: pointer;
+        margin-right: 5%;
+        -webkit-tap-highlight-color: transparent;
+        margin-left: auto;
+    }
+    .menu{
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 80px;
+        right: 28px;
+        background: white;
+        padding: 20px;
+        list-style: none;
+        gap: 10px;
+        border-radius: 5px;
+        border: solid 1px #DCC7A1;
+        
+    }
+    .bloquearScroll{
+        overflow: hidden;
+    }
+    .menu.activo{
+        display: flex;
+    }
+    .overlay.activo{
+        display: block;
+    }
+    .overlay.activo{
+        display: none;
+        position: fixed;
+        inset: 0;
+        background: rgba(0,0,0,0.5);
+    }
     section{
         background-color: white;
         padding: 1%;
@@ -192,6 +244,12 @@ p{
 
 a{
     font-size: 1em;
+    color: #2A3439;
+    text-decoration: none;
+    -webkit-tap-highlight-color: transparent;
+}
+a:active{
+    color: blue;
 }
 
 footer{
@@ -200,8 +258,18 @@ footer{
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-bottom: 5%;
-    
+    /*margin-bottom: 5%;*/
+    padding-bottom: 5%;
+}
+
+.footerHistorias{
+     max-width: 30%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 5%;
+    font-size: 1.2em;
 }
 
 .parrafos-horizontales{
