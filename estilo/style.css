@@ -14,7 +14,6 @@ body{
     margin: auto;
     background-color: #B2BEB5;
     
-
 }
 
 .hamburguesa{
@@ -137,6 +136,22 @@ p{
     
 }
 
+.lightBox{
+    position: fixed;
+    z-index: 1000;
+    display: none;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 400px;
+    z-index: 1000;
+
+}
+
+.fotoFlotanteActiva{
+    display: flex;
+}
+
 .item-galeria{
     background-size: cover;
     background-position: center;
@@ -233,7 +248,20 @@ p{
         background-color: white;
         padding: 1%;
     }
+    .lightBox{
+    position: fixed;
+    z-index: 1000;
+    display: none;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 280px;
+    z-index: 1000;
 
+    }
+    .fotoFlotanteActiva{
+    display: flex;
+    }
 }
 
 @media (min-width: 601px) and (max-width: 924px){
