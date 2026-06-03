@@ -1,29 +1,34 @@
 
 let boton = document.querySelector(".hamburguesa");
-let menu = document.querySelector(".menu");
-let overlay = document.querySelector(".overlay");
-let body = document.querySelector("body");
 boton.addEventListener("click", function () {
-    overlay.classList.toggle("activo");
+    let menu = document.querySelector(".menu");
+    let body = document.querySelector("body");
     menu.classList.toggle("activo");
     body.classList.toggle("bloquearScroll");
 });
-document.addEventListener("click", function(evento) {
-    if(!menu.contains(evento.target) && !boton.contains(evento.target)) {
-        menu.classList.remove("activo");
-        overlay.classList.remove("activo");
-        body.classList.remove("bloquearScroll");
-    }
-});
-
-let smallImage = document.querySelectorAll(".fotoPequena");
-let lightBox = document.querySelector(".lightBox");
-smallImage.forEach(function(smallImage) {
+    let smallImage = document.querySelectorAll(".foto-galeria");
+    smallImage.forEach(function(smallImage) {
     smallImage.addEventListener("click", function() {
+        let body = document.querySelector("body");
+        let lightBox = document.querySelector(".lightBox");
         lightBox.src = smallImage.src;
         lightBox.classList.toggle("fotoFlotanteActiva");
+        body.classList.toggle("bloquearScroll");
     });
 });
-lightBox.addEventListener("click", function() {
-    lightBox.classList.remove("fotoFlotanteActiva");
-})
+    let lightBox = document.querySelector(".lightBox");
+    lightBox.addEventListener("click", function() {
+    let body = document.querySelector("body");
+    lightBox.classList.toggle("fotoFlotanteActiva");
+    body.classList.toggle("bloquearScroll");
+})  
+    document.addEventListener("click", function(evento) {
+    let galeria = document.querySelector(".galeria");
+    let menu = document.querySelector(".menu");
+    let boton = document.querySelector(".hamburguesa");
+    let body = document.querySelector("body");
+        if(!boton.contains(evento.target) && !galeria.contains(evento.target)) {
+            menu.classList.remove("activo");
+            body.classList.remove("bloquearScroll");
+        }
+});
