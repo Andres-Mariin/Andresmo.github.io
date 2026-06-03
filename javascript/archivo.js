@@ -30,5 +30,6 @@ boton.addEventListener("click", function () {
         if(!boton.contains(evento.target) && !galeria.contains(evento.target)) {
             menu.classList.remove("activo");
             body.classList.remove("bloquearScroll");
+            lightBox.classList.remove("fotoFlotanteActiva");
         }
 });
