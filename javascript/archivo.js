@@ -11,9 +11,11 @@ boton.addEventListener("click", function () {
     smallImage.addEventListener("click", function() {
         let body = document.querySelector("body");
         let lightBox = document.querySelector(".lightBox");
+        let overlay = document.querySelector(".overlay");
         lightBox.src = smallImage.src;
         lightBox.classList.toggle("fotoFlotanteActiva");
         body.classList.toggle("bloquearScroll");
+        overlay.classList.toggle("activo");
     });
 });
     let lightBox = document.querySelector(".lightBox");
@@ -27,9 +29,11 @@ boton.addEventListener("click", function () {
     let menu = document.querySelector(".menu");
     let boton = document.querySelector(".hamburguesa");
     let body = document.querySelector("body");
+    let overlay = document.querySelector(".activo");
         if(!boton.contains(evento.target) && !galeria.contains(evento.target)) {
             menu.classList.remove("activo");
             body.classList.remove("bloquearScroll");
             lightBox.classList.remove("fotoFlotanteActiva");
+            overlay.classList.remove("activo");
         }
 });
