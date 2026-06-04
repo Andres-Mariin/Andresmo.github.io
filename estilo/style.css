@@ -277,6 +277,10 @@ a{
     color: #2A3439;
     text-decoration: none;
     -webkit-tap-highlight-color: transparent;
+    display: flex;
+    flex-direction: column;
+    min-width: 100%;
+    
 }
 a:active{
     color: blue;

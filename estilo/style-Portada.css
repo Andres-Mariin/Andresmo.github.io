@@ -228,6 +228,10 @@ a:active {
     }
     a{
         font-size: 1em;
+        display: flex;
+        flex-direction: column;
+        min-width: 100%;
+        
     }
     .contenido_portada{
         font-size: 1.2em;
